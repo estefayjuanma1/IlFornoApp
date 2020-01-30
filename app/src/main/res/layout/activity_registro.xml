@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity"
+    android:orientation="vertical"
+    android:background="@drawable/images1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registro"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/digite_su_nombre"
+            android:background="@drawable/boton"
+            style="@style/margin"
+            android:gravity="center"
+            android:id="@+id/nombre"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/digite_su_correo_electronico"
+            android:background="@drawable/boton"
+            android:inputType="textWebEmailAddress"
+            style="@style/margin"
+            android:gravity="center"
+            android:id="@+id/correo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ingrese_una_contrase_a"
+            android:background="@drawable/boton"
+            android:inputType="textPassword"
+            style="@style/margin"
+            android:gravity="center"
+            android:id="@+id/contrasena"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirmar_contrase_a"
+            android:background="@drawable/boton"
+            android:inputType="textPassword"
+            style="@style/margin"
+            android:gravity="center"
+            android:id="@+id/repcontrasena"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/g_nero"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_masculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="@string/masculino"
+                android:layout_margin="8dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_femenino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="@string/femenino"
+                android:layout_margin="8dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ciudad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ciudad_de_residencia"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <Spinner
+            android:id="@+id/sp_ciudad"
+            style="@style/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:entries="@array/Ciudades"
+            android:scrollbarSize="20dp" />
+
+        <Button
+            android:id="@+id/bt_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/registrar_datos" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

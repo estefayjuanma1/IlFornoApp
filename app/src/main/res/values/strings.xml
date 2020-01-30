@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">IlFornoApp</string>
+    <string name="login">LOGIN</string>
+    <string name="correo_electronico">Correo electronico</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="registro">REGISTRO</string>
+    <string name="digite_su_correo_electronico">Digite su correo electrónico</string>
+    <string name="ingrese_una_contrase_a">Ingrese una contraseña</string>
+    <string name="confirmar_contrase_a">Confirmar contraseña</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="g_nero">Género</string>
+    <string name="ciudad_de_residencia">Ciudad de residencia</string>
+    <string name="registrar_datos">Registrar datos</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="digite_su_nombre">Digite su nombre</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="biennvenido">Bienvenido!!</string>
+    <string name="su_nombre_de_usuario_es">Su nombre de usuario es:</string>
+    <string name="su_contrase_a_es">Su contraseña es:</string>
+
+    <string-array name="Ciudades">
+        <item>Medellín</item>
+        <item>Bogotá</item>
+        <item>Cali</item>
+        <item>Manizales</item>
+
+    </string-array>
+
+
+
+</resources>
