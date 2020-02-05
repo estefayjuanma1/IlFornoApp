@@ -19,6 +19,11 @@
     <string name="biennvenido">Bienvenido!!</string>
     <string name="su_nombre_de_usuario_es">Su nombre de usuario es:</string>
     <string name="su_contrase_a_es">Su contraseña es:</string>
+    <string name="correo_electronico1">CORREO ELECTRONICO: *</string>
+    <string name="contrase_a1">CONTRASEÑA: *</string>
+    <string name="ingresar1">Ingresar</string>
+    <string name="crear_cuenta1">/ Crear cuenta</string>
+    <string name="politica">Tus datos personales se utilizarán para respaldar tu experiencia en este sitio web, para administrar el acceso a tu cuenta y para otros fines descritos en nuestra política de privacidad.</string>
 
     <string-array name="Ciudades">
         <item>Medellín</item>

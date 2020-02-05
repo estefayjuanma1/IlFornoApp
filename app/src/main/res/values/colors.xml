@@ -24,6 +24,11 @@
     <item name="firebrick" type="color">#b22222</item>
     <item name="brown" type="color">#a52a2a</item>
     <item name="saddlebrown" type="color">#8b4513</item>
+    <item name="ilfornobuttom" type="color">#8f6066</item>
+    <item name="ilfornofondo" type="color">#fbf8f2</item>
+    <item name="ilfornofondotext" type="color">#973142</item>
+    <item name="ilfornofondotextingresar" type="color">#333333</item>
+    <item name="ilfornofondotextcrear" type="color">#8c8d89</item>
     <item name="crimson" type="color">#dc143c</item>
     <item name="mediumvioletred" type="color">#c71585</item>
     <item name="teal" type="color">#008080</item>

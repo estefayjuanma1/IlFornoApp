@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".RegistroActivity"
     android:orientation="vertical"
-    android:background="@drawable/images1">
+    android:background="@color/ilfornofondo">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,14 +20,14 @@
             android:textSize="30sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:textColor="@color/white"
+            android:textColor="@color/ilfornofondotext"
             android:layout_margin="5dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/digite_su_nombre"
-            android:background="@drawable/boton"
+            android:background="@drawable/text"
             style="@style/margin"
             android:gravity="center"
             android:id="@+id/nombre"/>
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/digite_su_correo_electronico"
-            android:background="@drawable/boton"
+            android:background="@drawable/text"
             android:inputType="textWebEmailAddress"
             style="@style/margin"
             android:gravity="center"
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/ingrese_una_contrase_a"
-            android:background="@drawable/boton"
+            android:background="@drawable/text"
             android:inputType="textPassword"
             style="@style/margin"
             android:gravity="center"
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/confirmar_contrase_a"
-            android:background="@drawable/boton"
+            android:background="@drawable/text"
             android:inputType="textPassword"
             style="@style/margin"
             android:gravity="center"
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:text="@string/g_nero"
-            android:textColor="@color/white"
+            android:textColor="@color/ilfornofondotext"
             android:textStyle="bold"
             android:textSize="25dp"/>
 
@@ -82,8 +82,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:checked="true"
-                android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textColor="@color/ilfornofondotext"
+                android:textSize="20sp"
                 android:text="@string/masculino"
                 android:layout_margin="8dp"/>
 
@@ -92,8 +92,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textColor="@color/ilfornofondotext"
+                android:textSize="20sp"
                 android:text="@string/femenino"
                 android:layout_margin="8dp"/>
         </RadioGroup>
@@ -103,7 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ciudad_de_residencia"
-            android:textColor="@color/white"
+            android:textColor="@color/ilfornofondotext"
             android:textStyle="bold"
             android:textSize="15dp"/>
 
@@ -121,11 +121,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:background="@color/ilfornobuttom"
             android:text="@string/registrar_datos" />
 
 
-
-
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="@string/politica"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="@color/ilfornofondotext"
+    android:textSize="15sp"
+    android:layout_marginTop="30dp"
+    />
 
     </LinearLayout>
 
