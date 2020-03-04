@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "820272100033",
+    "firebase_url": "https://ilfornoapp.firebaseio.com",
+    "project_id": "ilfornoapp",
+    "storage_bucket": "ilfornoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820272100033:android:4d1740febb03b85916da40",
+        "android_client_info": {
+          "package_name": "com.estefayjuanma.sesionfragmentos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820272100033-lp1t8n7vvt54q65jigfqtl6obm8aq3o0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.estefayjuanma.sesionfragmentos",
+            "certificate_hash": "5435149cf5bf4a666376958d65abac673f62ee9c"
+          }
+        },
+        {
+          "client_id": "820272100033-ueq45b18gitpfnhj5gii7g2l71kg8r95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCizR0ZUCy3x_V4RRGSZw-Gdkd9FRdhug8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820272100033-ueq45b18gitpfnhj5gii7g2l71kg8r95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
