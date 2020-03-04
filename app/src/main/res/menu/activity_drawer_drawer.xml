@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_action_name"
+            android:title="@string/menu_inicio" />
+        <item
+            android:id="@+id/nav_carta"
+            android:icon="@drawable/ic_action_menu"
+            android:title="@string/menu_carta" />
+        <item
+            android:id="@+id/nav_restaurante"
+            android:icon="@drawable/ic_action_restaurante"
+            android:title="@string/menu_restaurante" />
+        <item
+            android:id="@+id/nav_cupones"
+            android:icon="@drawable/ic_action_cupones"
+            android:title="@string/menu_cupones" />
+        <item
+            android:id="@+id/nav_pedidos"
+            android:icon="@drawable/ic_action_pedidos"
+            android:title="@string/menu_pedidos" />
+        <item
+            android:id="@+id/nav_recoger"
+            android:icon="@drawable/ic_action_recoger"
+            android:title="@string/menu_recoger" />
+        <item
+            android:id="@+id/nav_ayuda"
+            android:icon="@drawable/ic_action_ayuda"
+            android:title="@string/menu_ayuda" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_perfil"
+                android:icon="@drawable/ic_action_perfil"
+                android:title="@string/menu_perfil" />
+            <item
+                android:id="@+id/nav_config"
+                android:icon="@drawable/ic_action_configuracion"
+                android:title="@string/menu_configuracion" />
+        </menu>
+    </item>
+
+</menu>

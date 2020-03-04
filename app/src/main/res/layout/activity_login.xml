@@ -14,9 +14,11 @@
         android:id="@+id/textView"
         android:layout_width="130dp"
         android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
         android:layout_marginTop="15dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
         android:layout_marginBottom="15dp"
         android:gravity="center"
         android:text="@string/ingresar1"
@@ -24,6 +26,7 @@
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.447" />
@@ -136,23 +139,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inicio" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="208dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="@string/crear_cuenta1"
-        android:textColor="@color/ilfornofondotextcrear"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.509" />
 </androidx.constraintlayout.widget.ConstraintLayout>

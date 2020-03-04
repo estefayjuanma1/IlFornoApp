@@ -30,9 +30,9 @@ class RegistroActivity : AppCompatActivity() {
                     Toast.makeText(this, "Debe digitar todos los campos", Toast.LENGTH_SHORT).show()
                 }
                 else{
-                    intent.putExtra("correo", correo)
+                    intent.putExtra("correo", correo) //envio de datos a los intents
                     intent.putExtra("contrasena", contra)
-                    setResult(Activity.RESULT_OK, intent)
+                    setResult(Activity.RESULT_OK, intent) //intent ok
                 }
             }
             finish()

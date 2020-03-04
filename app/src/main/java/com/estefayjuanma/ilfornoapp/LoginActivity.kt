@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
 
             } else {
                 if (correor == correoingresado && contrar == contraingresada) {
-                    var intentmain = Intent(this, MainActivity::class.java)
+                    var intentmain = Intent(this, DrawerActivity::class.java)
                     intentmain.putExtra("correo", correor)
                     intentmain.putExtra("contrasena", contrar)
                     startActivity(intentmain)

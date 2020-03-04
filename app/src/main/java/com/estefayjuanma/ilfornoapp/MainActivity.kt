@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     var contra = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -22,8 +23,7 @@ class MainActivity : AppCompatActivity() {
         if(datos != null) {
             correo = datos?.getString("correo").toString()
             contra = datos?.getString("contrasena").toString()
-            tv_correo.text = correo
-            tv_contra.text = contra
+
         }
         else{
             Toast.makeText(this, "Los datos ingresados no coinciden", Toast.LENGTH_SHORT).show()

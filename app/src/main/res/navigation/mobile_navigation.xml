@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.estefayjuanma.ilfornoapp.ui.inicio.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_carta" />
+    <fragment
+        android:id="@+id/nav_carta"
+        android:name="com.estefayjuanma.ilfornoapp.ui.carta.CartaFragment"
+        android:label="@string/menu_carta"
+        tools:layout="@layout/fragment_carta" />
+
+    <fragment
+        android:id="@+id/nav_restaurante"
+        android:name="com.estefayjuanma.ilfornoapp.ui.restaurantes.RestaurantesFragment"
+        android:label="@string/menu_restaurante"
+        tools:layout="@layout/fragment_restaurantes" />
+
+    <fragment
+        android:id="@+id/nav_cupones"
+        android:name="com.estefayjuanma.ilfornoapp.ui.cupones.CuponesFragment"
+        android:label="@string/menu_cupones"
+        tools:layout="@layout/fragment_cupones" />
+
+    <fragment
+        android:id="@+id/nav_pedidos"
+        android:name="com.estefayjuanma.ilfornoapp.ui.pedidos.PedidosFragment"
+        android:label="@string/menu_pedidos"
+        tools:layout="@layout/fragment_pedidos" />
+
+    <fragment
+        android:id="@+id/nav_recoger"
+        android:name="com.estefayjuanma.ilfornoapp.ui.recoger.RecogerFragment"
+        android:label="@string/menu_recoger"
+        tools:layout="@layout/fragment_recoger" />
+
+    <fragment
+        android:id="@+id/nav_ayuda"
+        android:name="com.estefayjuanma.ilfornoapp.ui.ayuda.AyudanosFragment"
+        android:label="@string/menu_ayuda"
+        tools:layout="@layout/fragment_ayudanos" />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.estefayjuanma.ilfornoapp.ui.perfil.PerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_config"
+        android:name="com.estefayjuanma.ilfornoapp.ui.configuracion.ConfigFragment"
+        android:label="@string/menu_configuracion"
+        tools:layout="@layout/fragment_config" />
+</navigation>
