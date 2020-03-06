@@ -16,7 +16,7 @@ class RestaurantesFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?//root
     ): View? {
         restaurantesViewModel =
             ViewModelProviders.of(this).get(RestaurantesViewModel::class.java)
