@@ -35,7 +35,7 @@ class DrawerActivity : AppCompatActivity() {
                 R.id.nav_inicio, R.id.nav_carta, R.id.nav_restaurante, R.id.nav_cupones,
                 R.id.nav_pedidos, R.id.nav_recoger, R.id.nav_ayuda,
                 R.id.nav_config, R.id.nav_perfil
-            ), drawerLayout//draweractivity
+            ), drawerLayout//draweractivitykkk
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
