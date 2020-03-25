@@ -1,4 +1,5 @@
-package com.estefayjuanma.ilfornoapp.ui.carta
+package com.estefayjuanma.ilfornoapp.ui.postres
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.estefayjuanma.ilfornoapp.R
 
-class CartaFragment : Fragment() {
+class PostresFragment : Fragment() {
 
-    private lateinit var cartaViewModel: CartaViewModel
+    private lateinit var postresViewModel: PostresViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        cartaViewModel =
-            ViewModelProviders.of(this).get(CartaViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_carta, container, false)
-        val textView: TextView = root.findViewById(R.id.text_carta)
-        cartaViewModel.text.observe(this, Observer {
+        postresViewModel =
+            ViewModelProviders.of(this).get(PostresViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_postres, container, false)
+        val textView: TextView = root.findViewById(R.id.text_postres)
+        postresViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root

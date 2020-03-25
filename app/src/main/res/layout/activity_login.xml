@@ -101,6 +101,7 @@
         android:background="@color/ilfornofondo"
         app:layout_constraintBottom_toTopOf="@+id/inicio"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contrasenalog"
         app:srcCompat="@drawable/imagesfinal" />
@@ -117,13 +118,14 @@
         android:layout_marginBottom="11dp"
         android:background="@drawable/boton"
         android:text="@string/iniciar_sesi_n"
-        app:layout_constraintBottom_toTopOf="@+id/Registrarse"
+        app:layout_constraintBottom_toTopOf="@+id/registrarse"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/Registrarse"
+        android:id="@+id/registrarse"
         style="@style/margin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -135,6 +137,24 @@
         android:background="@drawable/boton"
         android:text="@string/registrarse"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inicio" />
+
+    <TextView
+        android:id="@+id/olvidecontra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/olvide_mi_contrase_a"
+        android:textColor="@color/ilfornobuttom"
+        app:layout_constraintBottom_toTopOf="@+id/registrarse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inicio" />

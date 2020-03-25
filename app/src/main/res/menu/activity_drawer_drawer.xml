@@ -4,14 +4,18 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_inicio"
             android:icon="@drawable/ic_action_name"
             android:title="@string/menu_inicio" />
+        ///////////////////////////////////
+
         <item
-            android:id="@+id/nav_carta"
+            android:id="@+id/nav_menutab"
             android:icon="@drawable/ic_action_menu"
-            android:title="@string/menu_carta" />
+            android:title="@string/title_activity_menu_tab" />
+
         <item
             android:id="@+id/nav_restaurante"
             android:icon="@drawable/ic_action_restaurante"

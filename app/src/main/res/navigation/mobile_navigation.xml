@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/nav_inicio">
+    <activity
+        android:id="@+id/nav_menutab"
+        android:name="com.estefayjuanma.ilfornoapp.MenuTabActivity"
+        android:label="@string/title_activity_menu_tab"
+        tools:layout="@layout/activity_menu_tab"/>
 
     <fragment
         android:id="@+id/nav_inicio"
         android:name="com.estefayjuanma.ilfornoapp.ui.inicio.InicioFragment"
         android:label="@string/menu_inicio"
-        tools:layout="@layout/fragment_carta" />
-    <fragment
-        android:id="@+id/nav_carta"
-        android:name="com.estefayjuanma.ilfornoapp.ui.carta.CartaFragment"
-        android:label="@string/menu_carta"
-        tools:layout="@layout/fragment_carta" />
+        tools:layout="@layout/fragment_inicio" />
+    //////////////////////////////
 
     <fragment
         android:id="@+id/nav_restaurante"
@@ -57,4 +58,7 @@
         android:name="com.estefayjuanma.ilfornoapp.ui.configuracion.ConfigFragment"
         android:label="@string/menu_configuracion"
         tools:layout="@layout/fragment_config" />
+
+
+
 </navigation>

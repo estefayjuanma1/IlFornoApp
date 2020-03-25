@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_entrada">
+
+    <fragment
+        android:id="@+id/navigation_entrada"
+        android:name="com.estefayjuanma.ilfornoapp.ui.entradas.EntradasFragment"
+        android:label="@string/title_entradas"
+        tools:layout="@layout/fragment_entradas" />
+
+    <fragment
+        android:id="@+id/navigation_fuerte"
+        android:name="com.estefayjuanma.ilfornoapp.ui.fuertes.FuertesFragment"
+        android:label="@string/title_fuertes"
+        tools:layout="@layout/fragment_fuertes" />
+
+    <fragment
+        android:id="@+id/navigation_postres"
+        android:name="com.estefayjuanma.ilfornoapp.ui.postres.PostresFragment"
+        android:label="@string/title_postres"
+        tools:layout="@layout/fragment_postres" />
+</navigation>

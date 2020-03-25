@@ -40,7 +40,7 @@
             android:inputType="textWebEmailAddress"
             style="@style/margin"
             android:gravity="center"
-            android:id="@+id/correo"/>
+            android:id="@+id/et_correo"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -50,7 +50,7 @@
             android:inputType="textPassword"
             style="@style/margin"
             android:gravity="center"
-            android:id="@+id/contrasena"/>
+            android:id="@+id/et_contrasena"/>
 
         <EditText
             android:layout_width="match_parent"

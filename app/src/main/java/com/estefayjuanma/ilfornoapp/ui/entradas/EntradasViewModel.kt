@@ -1,13 +1,13 @@
-package com.estefayjuanma.ilfornoapp.ui.carta
+package com.estefayjuanma.ilfornoapp.ui.entradas
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class CartaViewModel : ViewModel() {
+class EntradasViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "Este fragmento mostrara las listas de los productos ofrecidos"
+        value = "This is dashboard Fragment"
     }
     val text: LiveData<String> = _text
 }

@@ -16,7 +16,7 @@
     <string name="registrarse">Registrarse</string>
     <string name="digite_su_nombre">Digite su nombre</string>
     <string name="cerrar_sesi_n">Cerrar sesión</string>
-    <string name="biennvenido">Bienvenido!!</string>
+    <string name="bienvenido">Bienvenido!!</string>
     <string name="su_nombre_de_usuario_es">Su nombre de usuario es:</string>
     <string name="su_contrase_a_es">Su contraseña es:</string>
     <string name="correo_electronico1">CORREO ELECTRONICO: *</string>
@@ -49,6 +49,17 @@
     <string name="menu_perfil">Perfil</string>
     <string name="menu_configuracion">Configuración</string>
     <string name="menu_inicio">Inicio</string>
+    <string name="title_activity_menu_tab">Menu</string>
+    <string name="title_entradas">Entradas</string>
+    <string name="title_fuertes">Platos fuertes</string>
+    <string name="title_postres">Postres y bebidas</string>
+    <string name="error_usg_login">There is no user record corresponding to this identifier. The user may have been deleted.</string>
+    <string name="olvide_mi_contrase_a">Olvide mi contraseña</string>
+    <string name="email_de_recuperacion">Email de recuperacion</string>
+    <string name="recuperar_password">Recuperar contraseña</string>
+    <string name="nombre_restaurante">Nombre restaurante</string>
+    <string name="direccion_del_restaurante">Direccion del restaurante</string>
+    <string name="telefono_del_restaurante">Telefono del restaurante</string>
 
 
 </resources>
