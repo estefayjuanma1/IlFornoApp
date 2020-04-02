@@ -1,4 +1,4 @@
-package com.estefayjuanma.ilfornoapp
+package com.estefayjuanma.ilfornoapp.ui.model
 
 import androidx.room.Entity
 

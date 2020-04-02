@@ -60,6 +60,13 @@
     <string name="nombre_restaurante">Nombre restaurante</string>
     <string name="direccion_del_restaurante">Direccion del restaurante</string>
     <string name="telefono_del_restaurante">Telefono del restaurante</string>
+    <string name="nombrerestaurante">Nombre Restaurante</string>
+    <string name="direccion">Direccion</string>
+    <string name="telefono">Telefono</string>
+    <string name="nombre_del_plato">Nombre del plato</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="precio">Precio</string>
+    <string name="nombre">Nombre</string>
 
 
 </resources>
