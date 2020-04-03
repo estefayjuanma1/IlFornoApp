@@ -1,25 +1,34 @@
 package com.estefayjuanma.ilfornoapp
 
 import android.app.Activity
+import android.app.Application
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.room.Room
+import androidx.room.RoomDatabase
+import com.estefayjuanma.ilfornoapp.ui.Room.Ilforno
+import com.estefayjuanma.ilfornoapp.ui.Room.UsuarioDAO
+import com.estefayjuanma.ilfornoapp.ui.Room.UsuarioDB
 import com.estefayjuanma.ilfornoapp.ui.model.Usuario
+import com.estefayjuanma.ilfornoapp.ui.model.Usuarioroom
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_registro.*
+import java.sql.Types.NULL
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 
-class RegistroActivity : AppCompatActivity() {
-
+class RegistroActivity : AppCompatActivity()  {
+    //AppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
+
 
         bt_registrar.setOnClickListener {
 
@@ -38,11 +47,24 @@ class RegistroActivity : AppCompatActivity() {
                     Toast.makeText(this, "Debe digitar todos los campos", Toast.LENGTH_SHORT).show()
                 }
                 else{
+                    createUserInRoom()
                     createUserInFirebaseAuth()
                 }
             }
         }
     }
+
+    private fun createUserInRoom() {
+        var correo = et_correo.text.toString()
+        var contra = et_contrasena.text.toString()
+
+        val usuarioroom = Usuarioroom(NULL, correo, contra)
+        var UsuarioDao: UsuarioDAO = Ilforno.database.UsuarioDAO()
+
+        UsuarioDao.insertUsuario(usuarioroom)
+        }
+
+
 
     private fun createUserInFirebaseAuth() {
         var malescrito = true
