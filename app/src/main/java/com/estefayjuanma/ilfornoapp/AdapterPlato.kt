@@ -40,8 +40,9 @@ class AdapterPlato (
 
         fun bindPlato(plato: Plato) {
             itemView.tv_nombreplato.text = plato.nombre
-            itemView.tv_descripcion.text = plato.descripcion
+           // itemView.tv_descripcion.text = plato.descripcion
             itemView.tv_precio.text = plato.precio
+            itemView.iv_carrito.setImageResource(R.drawable.ic_shopping_cart_black_24dp)
             Picasso.get().load(plato.urlfoto).into(itemView.iv_imagenplato)
             ;
         }

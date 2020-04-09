@@ -12,20 +12,16 @@ import com.estefayjuanma.ilfornoapp.R
 
 class ConfigFragment : Fragment() {
 
-    private lateinit var configViewModel: ConfigViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        configViewModel =
-            ViewModelProviders.of(this).get(ConfigViewModel::class.java)
+
         val root = inflater.inflate(R.layout.fragment_config, container, false)
-        val textView: TextView = root.findViewById(R.id.text_config)
-        configViewModel.text.observe(this, Observer {
-            textView.text = it
-        })
+
+
         return root
     }
 }

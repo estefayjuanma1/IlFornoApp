@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">IlFornoApp</string>
     <string name="login">LOGIN</string>
-    <string name="correo_electronico">Correo electronico</string>
     <string name="contrase_a">Contraseña</string>
     <string name="registro">REGISTRO</string>
     <string name="digite_su_correo_electronico">Digite su correo electrónico</string>
@@ -67,6 +66,62 @@
     <string name="descripcion">Descripcion</string>
     <string name="precio">Precio</string>
     <string name="nombre">Nombre</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="perfil">Perfil</string>
+    <string name="nombre_de_usuario">Nombre de usuario registrado</string>
+    <string name="contrase_a_registrada">Contraseña registrada</string>
+    <string name="cerrar_sesion">Cerrar sesion</string>
+    <string name="ciudad_de_residencia_registrada">Ciudad de residencia registrada</string>
+    <string name="correo_electronico">Correo electronico</string>
+    <string name="bienvenidooo">Bienvenido! Aquí podras editar toda la configuración que tienes como usuario</string>
+    <string name="editar_nombre_de_usuario">Editar nombre de usuario</string>
+    <string name="nuevo_nombre">Nuevo nombre</string>
+    <string name="editar_correo_electr_nico">Editar correo electrónico</string>
+    <string name="nuevo_correo_electr_nico">Nuevo correo electrónico</string>
+    <string name="editar_ciudad_de_residencia">Editar ciudad de residencia</string>
+    <string name="cambiar_foto_de_perfil">Cambiar foto de perfil</string>
+    <string name="guardar_cambios">Guardar cambios</string>
+    <string name="cupones">Cupones</string>
+    <string name="nota_cupones">Estos son los cupones disponibles para este mes, recuerda que solo puedes redimir uno por pedido</string>
+    <string name="redimir_cupon_1">Codigo de descuento</string>
+    <string name="redimir_cupon_2">Codigo de dsscuento</string>
+    <string name="cupon1">Cupon 1: Redimible por compras superiores a $40.000</string>
+    <string name="cupon2">Cupon2: redimible por compras superiores a $80.000</string>
+    <string name="cumple">Recuerda que el dia de tu cumpleaños tienes derecho a reclamar tu postre gratis, al finalizar tu pedido déjanos un comentario con la foto de tu cédula o presentar tu cédula en el restaurante al reclamar tu orde</string>
+    <string name="actualmente_en_el_carrito">Actualmente en el carrito</string>
+    <string name="total">Total:</string>
+    <string name="domicilio">Domicilio</string>
+    <string name="recoger_en_tienda">Recoger en tienda</string>
+    <string name="recoger_en_restaurante">Recoger en restaurante</string>
+    <string name="recogerr">Paso 1: Selecciona el restaurante y la hora a la que deseas recoger tu pedido \nPaso 2: Ingresa tus datos personales. \nPaso 3: Recoge el pedido con tu nombre completo y numero de factura en el restaurante seleccionado.</string>
+    <string name="nombre_de_quien_realiza_el_pedido">Nombre de quien realiza el pedido</string>
+    <string name="seleccione_el_restaurante">Seleccione el restaurante</string>
+    <string name="n_mero_de_documento_de_quien_realiza_el_pedido">Número de documento de quien realiza el pedido</string>
+    <string name="documento_no">Documento Nro.</string>
+    <string name="hora_a_la_cual_desea_recoger_el_pedido_m_n_1_hora_de_espera">Hora a la cual desea recoger el pedido (mín. 1 hora de espera)</string>
+    <string name="nro_de_factura">Nro. de factura: </string>
+    <string name="ay_danos_a_mejorar">Ayúdanos a mejorar!</string>
+    <string name="recomendacion">Escriba aquí su recomendación. \n\nEn caso de tener alguna queja o reclamo también puede dejarla por este medio. \n\nAgradecemos su colaboración.</string>
+    <string name="enter">\n\n\n\n\n\n\n\n</string>
+    <string name="enviar_recomendaci_n">Enviar recomendación</string>
 
+    <string-array name="Cantidad">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
 
+    <string-array name="Restaurantes">
+        <item>Cc Mayorca</item>
+        <item>Cc Viva Envigado</item>
+        <item>Cc El Tesoro</item>
+        <item>Cc Santa fe</item>
+        <item>Mall Villagrande</item>
+        <item>Mall San Lucas</item>
+        <item>Il forno Parque Lleras</item>
+        <item>Il forno viva palmas</item>
+    </string-array>
 </resources>

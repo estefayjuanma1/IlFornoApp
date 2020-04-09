@@ -25,6 +25,10 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+ }
+
+    public override fun onStart() {
+        super.onStart()
         internet = isOnline( this )
         if(internet == true) {
             Toast.makeText(this, "si", Toast.LENGTH_SHORT).show()
@@ -84,7 +88,7 @@ class LoginActivity : AppCompatActivity() {
 
                             }
                         }
-                } else{ /////////////
+                } else{
                     val correo :String = correolog.text.toString()
                     val usuarioDao: UsuarioDAO = Ilforno.database.UsuarioDAO()
                     val usuarioroom :Usuarioroom = usuarioDao.searchUsuario(correo)
@@ -98,10 +102,9 @@ class LoginActivity : AppCompatActivity() {
                             Toast.LENGTH_SHORT
                         ).show()
                     }
-                }/////////////
+                }
             }
         }
-
     }
 
     fun isOnline(context: Context): Boolean {
@@ -110,14 +113,7 @@ class LoginActivity : AppCompatActivity() {
         return networkInfo != null && networkInfo.isConnected
     }
 
-    public override fun onStart() {
-        super.onStart()
-        val auth = FirebaseAuth.getInstance()  //var global para la autenticacion
-        val currentUser = auth.currentUser
-        //hay que mandarlo para cerrar sesion
-        //if(currentUser != null)
-        //gotoMainActivity()
-    }
+
     private fun gotoRegistroActivity() {
         val intent= Intent(this, RegistroActivity::class.java)
         startActivity(intent)
@@ -133,26 +129,5 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-
-
- //   override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-       // if (requestCode == 1234 && resultCode == Activity.RESULT_CANCELED)
-       //     Toast.makeText(this, "Registro no exitoso, los datos no coinciden", Toast.LENGTH_SHORT).show()
-
-  //      if (requestCode == 1234 && resultCode == Activity.RESULT_OK) {
-  //          Toast.makeText(this, data?.extras?.getString("correo"), Toast.LENGTH_SHORT).show()
-  //          super.onActivityResult(requestCode, resultCode, data)
-  //          //var datosRecibidos = intent.extras
-  //          if (data != null) {
-  //              correor= data?.extras?.getString("correo").toString()
-  //              contrar= data?.extras?.getString("contrasena").toString()
-
-  //          }
-  //      }else if(requestCode == 1234){
-  //          Toast.makeText(this, "Registro no exitoso, los datos no coinciden", Toast.LENGTH_SHORT).show()
-   //     }
-
-
- //   }
 }
 

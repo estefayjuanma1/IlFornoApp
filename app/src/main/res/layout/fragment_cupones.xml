@@ -1,19 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/ilfornofondo"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/text_cupones"
+        android:id="@+id/text_perfil"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:text="@string/cupones"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        style="@style/margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="@string/nota_cupones" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/cupon1"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:layout_width="399dp"
+        android:layout_height="111dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/treinta" />
+
+    <TextView
+        android:id="@+id/bt_cupon1"
+        style="@style/margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/ilfornofondotextcrear"
+
+        android:layout_gravity="center"
+        android:hint="@string/redimir_cupon_1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cupon2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:layout_width="399dp"
+        android:layout_height="111dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/cincuenta" />
+
+    <TextView
+        android:id="@+id/bt_cupon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="@string/redimir_cupon_2"
+        android:background="@color/ilfornofondotextcrear"
+        style="@style/margin" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/cumple"
+        android:textColor="@color/ilfornobuttom" />
+
+</LinearLayout>

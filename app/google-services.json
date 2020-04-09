@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:820272100033:android:4d1740febb03b85916da40",
         "android_client_info": {
-          "package_name": "com.estefayjuanma.sesionfragmentos"
+          "package_name": "com.estefayjuanma.IlfornoApp"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "820272100033-lp1t8n7vvt54q65jigfqtl6obm8aq3o0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.estefayjuanma.sesionfragmentos",
+            "package_name": "com.estefayjuanma.IlfornoApp",
             "certificate_hash": "5435149cf5bf4a666376958d65abac673f62ee9c"
           }
         },
