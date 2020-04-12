@@ -2,24 +2,22 @@ package com.estefayjuanma.ilfornoapp.ui.inicio
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import androidx.viewpager.widget.ViewPager
 import com.estefayjuanma.ilfornoapp.MenuTabActivity
 import com.estefayjuanma.ilfornoapp.PagerView
 import com.estefayjuanma.ilfornoapp.R
 import com.estefayjuanma.ilfornoapp.ui.cupones.CuponesFragment
-import com.estefayjuanma.ilfornoapp.ui.recoger.RecogerActivity
 import com.estefayjuanma.ilfornoapp.ui.restaurantes.RestaurantesFragment
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_inicio.view.*
-import kotlinx.android.synthetic.main.fragment_pedidos.view.*
 import java.util.*
 
 
@@ -32,8 +30,8 @@ class InicioFragment: Fragment() {
     lateinit var adapter: PagerView
     var currentPage: Int=0
     lateinit var timer: Timer
-    val DELAY_MS: Long = 5000
-    val PERIOD_MS: Long = 5000
+    val DELAY_MS: Long = 2000
+    val PERIOD_MS: Long = 2000
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -44,15 +42,16 @@ class InicioFragment: Fragment() {
         val root = inflater.inflate(R.layout.fragment_inicio, container, false)
 
         //////////////////////////////////////////////////////////////////////////////////
- /*       onBitMapLoaded1()
-        path= intArrayOf(R.drawable.imaginicio1,R.drawable.imaginicio2,R.drawable.imaginicio3)
-        mpager = root.findViewById(R.id.pager) as ViewPager
+        Picasso.get().load(R.drawable.hola1).resize(160,700)
+        onBitMapLoaded1()
+        path= intArrayOf(R.drawable.sliderrr,R.drawable.fotoinicio2,R.drawable.hola1)
+        mPager = root.findViewById(R.id.pager) as ViewPager
         adapter = PagerView(activity!!.applicationContext,path)
         mPager.adapter =adapter
-        dotsLayout = root.findViewById(R.id.dotsLaout)
+        dotsLayout = root.findViewById(R.id.dotsLayout) as LinearLayout
         createDots(0)
         updatePage()
-        mPager.addOnAdapterChangeListener(object : ViewPager.OnPageChangeListener{
+        mPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener{
             override fun onPageScrollStateChanged(state: Int) {
 
             }
@@ -73,7 +72,7 @@ class InicioFragment: Fragment() {
         })
 
 
-   */     /////////////////////////////////////////////////////////////////////////////////////
+       /////////////////////////////////////////////////////////////////////////////////////
 
         root.bt_restaurantes.setOnClickListener() {
             val transaction = fragmentManager?.beginTransaction()?.addToBackStack(null)
@@ -95,5 +94,53 @@ class InicioFragment: Fragment() {
             transaction?.commit()
         }
         return root
+    }
+
+    private fun onBitMapLoaded1() {
+
+    }
+
+    fun updatePage() {
+
+        var handler = Handler()
+        val Update: Runnable = Runnable{
+            if(currentPage == path.size)
+            {
+                currentPage = 0
+            }
+            mPager.setCurrentItem(currentPage++,true)
+        }
+        timer = Timer()
+        timer.schedule(object : TimerTask(){
+            override fun run() {
+                handler.post(Update)
+            }
+        },DELAY_MS,PERIOD_MS)
+    }
+
+    fun createDots(position: Int) {
+
+        if (dotsLayout!=null){
+            dotsLayout.removeAllViews()
+        }
+        dots = Array(path.size,{i -> ImageView(activity!!.applicationContext) })
+
+        for ( i in 0..path.size -1){
+            dots[i] = ImageView(activity!!.applicationContext)
+            if(i == position){
+                dots[i].setImageDrawable(ContextCompat.getDrawable(activity!!.applicationContext,R.drawable.active_dots))
+            }
+            else
+            {
+                dots[i].setImageDrawable(ContextCompat.getDrawable(activity!!.applicationContext,R.drawable.inactive_dots))
+            }
+            var params: LinearLayout.LayoutParams = LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+            )
+
+            params.setMargins(4,0,4,0)
+            dotsLayout.addView(dots[i],params)
+        }
     }
 }

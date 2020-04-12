@@ -13,44 +13,44 @@
     <fragment
         android:id="@+id/nav_inicio"
         android:name="com.estefayjuanma.ilfornoapp.ui.inicio.InicioFragment"
-        android:label="Ilforno"
+        android:label="IlForno"
         tools:layout="@layout/fragment_inicio" />
     //////////////////////////////
 
     <fragment
         android:id="@+id/nav_restaurante"
         android:name="com.estefayjuanma.ilfornoapp.ui.restaurantes.RestaurantesFragment"
-        android:label="Ilforno"
+        android:label="IlForno"
         tools:layout="@layout/fragment_restaurantes" />
 
     <fragment
         android:id="@+id/nav_cupones"
         android:name="com.estefayjuanma.ilfornoapp.ui.cupones.CuponesFragment"
-        android:label="Ilforno"
+        android:label="IlForno"
         tools:layout="@layout/fragment_cupones" />
 
     <fragment
         android:id="@+id/nav_pedidos"
         android:name="com.estefayjuanma.ilfornoapp.ui.pedidos.PedidosFragment"
-        android:label="Ilforno"
+        android:label="IlForno"
         tools:layout="@layout/fragment_pedidos" />
 
     <fragment
         android:id="@+id/nav_ayuda"
         android:name="com.estefayjuanma.ilfornoapp.ui.ayuda.AyudanosFragment"
-        android:label="Ilforno"
+        android:label="IlForno"
         tools:layout="@layout/fragment_ayudanos" />
 
     <fragment
         android:id="@+id/nav_perfil"
         android:name="com.estefayjuanma.ilfornoapp.ui.perfil.PerfilFragment"
-        android:label="Ilforno"
+        android:label="IlForno"
         tools:layout="@layout/fragment_perfil" />
 
     <fragment
         android:id="@+id/nav_config"
         android:name="com.estefayjuanma.ilfornoapp.ui.configuracion.ConfigFragment"
-        android:label="Ilforno"
+        android:label="IlForno"
         tools:layout="@layout/fragment_config" />
 
 

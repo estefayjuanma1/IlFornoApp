@@ -1,40 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ilfornofondo">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="586dp"
-        android:layout_height="334dp"
-        android:background="@color/ilfornofondo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/inicio2" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="482dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp"></androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/bt_menu"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="290dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
 
     <Button
         android:id="@+id/bt_menu"
-        style="@style/margin"
-        android:layout_width="417dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_above="@+id/bt_restaurantes"
+        android:layout_marginBottom="0dp"
         android:background="@drawable/boton"
         android:text="@string/men"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/bt_restaurantes"
-        style="@style/margin"
-        android:layout_width="414dp"
+
+        android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="5dp"
+        android:layout_above="@+id/bt_cupones"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="0dp"
         android:background="@drawable/boton"
         android:text="@string/restaurantes"
         android:textColor="@color/white"
@@ -45,10 +58,12 @@
 
     <Button
         android:id="@+id/bt_cupones"
-        style="@style/margin"
-        android:layout_width="403dp"
+
+        android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
         android:background="@drawable/boton"
         android:text="@string/cupones"
         android:textColor="@color/white"
@@ -56,4 +71,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_restaurantes" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -14,7 +14,7 @@
         />
 
     <solid
-        android:color="@color/active_dots"
+        android:color="@color/ilfornobuttom"
         />
 
 
