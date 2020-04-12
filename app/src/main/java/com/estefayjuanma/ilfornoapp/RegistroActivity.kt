@@ -12,6 +12,7 @@ import androidx.room.RoomDatabase
 import com.estefayjuanma.ilfornoapp.ui.Room.Ilforno
 import com.estefayjuanma.ilfornoapp.ui.Room.UsuarioDAO
 import com.estefayjuanma.ilfornoapp.ui.Room.UsuarioDB
+import com.estefayjuanma.ilfornoapp.ui.cupones.CuponesFragment
 import com.estefayjuanma.ilfornoapp.ui.model.Usuario
 import com.estefayjuanma.ilfornoapp.ui.model.Usuarioroom
 import com.google.firebase.auth.FirebaseAuth
@@ -23,7 +24,7 @@ import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 
-class RegistroActivity : AppCompatActivity()  {
+class RegistroActivity : AppCompatActivity() {
     //AppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -74,6 +75,7 @@ class RegistroActivity : AppCompatActivity()  {
             et_correo.text.toString(),
             et_contrasena.text.toString()
         )
+
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
@@ -130,4 +132,6 @@ class RegistroActivity : AppCompatActivity()  {
         finish()
         super.onBackPressed()
     }
+
+
 }

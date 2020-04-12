@@ -13,50 +13,44 @@
     <fragment
         android:id="@+id/nav_inicio"
         android:name="com.estefayjuanma.ilfornoapp.ui.inicio.InicioFragment"
-        android:label="@string/menu_inicio"
+        android:label="Ilforno"
         tools:layout="@layout/fragment_inicio" />
     //////////////////////////////
 
     <fragment
         android:id="@+id/nav_restaurante"
         android:name="com.estefayjuanma.ilfornoapp.ui.restaurantes.RestaurantesFragment"
-        android:label="@string/menu_restaurante"
+        android:label="Ilforno"
         tools:layout="@layout/fragment_restaurantes" />
 
     <fragment
         android:id="@+id/nav_cupones"
         android:name="com.estefayjuanma.ilfornoapp.ui.cupones.CuponesFragment"
-        android:label="@string/menu_cupones"
+        android:label="Ilforno"
         tools:layout="@layout/fragment_cupones" />
 
     <fragment
         android:id="@+id/nav_pedidos"
         android:name="com.estefayjuanma.ilfornoapp.ui.pedidos.PedidosFragment"
-        android:label="@string/menu_pedidos"
+        android:label="Ilforno"
         tools:layout="@layout/fragment_pedidos" />
-
-    <fragment
-        android:id="@+id/nav_recoger"
-        android:name="com.estefayjuanma.ilfornoapp.ui.recoger.RecogerFragment"
-        android:label="@string/menu_recoger"
-        tools:layout="@layout/fragment_recoger" />
 
     <fragment
         android:id="@+id/nav_ayuda"
         android:name="com.estefayjuanma.ilfornoapp.ui.ayuda.AyudanosFragment"
-        android:label="@string/menu_ayuda"
+        android:label="Ilforno"
         tools:layout="@layout/fragment_ayudanos" />
 
     <fragment
         android:id="@+id/nav_perfil"
         android:name="com.estefayjuanma.ilfornoapp.ui.perfil.PerfilFragment"
-        android:label="@string/menu_perfil"
+        android:label="Ilforno"
         tools:layout="@layout/fragment_perfil" />
 
     <fragment
         android:id="@+id/nav_config"
         android:name="com.estefayjuanma.ilfornoapp.ui.configuracion.ConfigFragment"
-        android:label="@string/menu_configuracion"
+        android:label="Ilforno"
         tools:layout="@layout/fragment_config" />
 
 

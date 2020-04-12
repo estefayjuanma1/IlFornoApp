@@ -81,7 +81,6 @@
     <string name="editar_ciudad_de_residencia">Editar ciudad de residencia</string>
     <string name="cambiar_foto_de_perfil">Cambiar foto de perfil</string>
     <string name="guardar_cambios">Guardar cambios</string>
-    <string name="cupones">Cupones</string>
     <string name="nota_cupones">Estos son los cupones disponibles para este mes, recuerda que solo puedes redimir uno por pedido</string>
     <string name="redimir_cupon_1">Codigo de descuento</string>
     <string name="redimir_cupon_2">Codigo de dsscuento</string>
@@ -104,6 +103,19 @@
     <string name="recomendacion">Escriba aquí su recomendación. \n\nEn caso de tener alguna queja o reclamo también puede dejarla por este medio. \n\nAgradecemos su colaboración.</string>
     <string name="enter">\n\n\n\n\n\n\n\n</string>
     <string name="enviar_recomendaci_n">Enviar recomendación</string>
+    <string name="ingresar_c_digo_de_descuento">Ingresar código de descuento:</string>
+    <string name="domicilios">Domicilios</string>
+    <string name="ingrese_la_direcci_n_de_env_o">Ingrese la dirección de envío</string>
+    <string name="dir">Dir:</string>
+    <string name="pago_con_tarjeta">Pago con tarjeta</string>
+    <string name="pago_en_efectivo">Pago en efectivo</string>
+    <string name="men">Menú</string>
+    <string name="restaurantes">Restaurantes</string>
+    <string name="cupones">Cupones</string>
+    <string name="postres">Postres</string>
+    <string name="platos_fuertes">Platos fuertes</string>
+    <string name="entradas">Entradas</string>
+
 
     <string-array name="Cantidad">
         <item>1</item>

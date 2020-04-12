@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containercupones"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ilfornofondo"
@@ -52,13 +53,14 @@
         app:srcCompat="@drawable/treinta" />
 
     <TextView
-        android:id="@+id/bt_cupon1"
+        android:id="@+id/tv_cupon1"
         style="@style/margin"
+        android:textStyle="bold"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@color/ilfornofondotextcrear"
-
         android:layout_gravity="center"
         android:hint="@string/redimir_cupon_1" />
 
@@ -81,15 +83,16 @@
         app:srcCompat="@drawable/cincuenta" />
 
     <TextView
-        android:id="@+id/bt_cupon2"
+        android:id="@+id/tv_cupon2"
+        style="@style/margin"
+        android:textStyle="bold"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginTop="8dp"
-        android:layout_gravity="center"
-        android:text="@string/redimir_cupon_2"
         android:background="@color/ilfornofondotextcrear"
-        style="@style/margin" />
+        android:layout_gravity="center"
+        android:hint="@string/redimir_cupon_1" />
 
     <TextView
         android:layout_width="match_parent"

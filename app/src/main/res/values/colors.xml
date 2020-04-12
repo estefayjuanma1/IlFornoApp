@@ -4,6 +4,13 @@
     <color name="colorPrimary">#973142</color>
     <color name="colorAccent">#973142</color>
 
+    <color name="slide1">#3F51B5</color>
+    <color name="slide2">#795548</color>
+    <color name="slide3">#00968B</color>
+
+    <color name="active_dots">#fffafa</color>
+    <color name="inactive_dots">#83878b</color>
+    
     <item name="black" type="color">#000000</item>
     <item name="navy" type="color">	#000080</item>
     <item name="darkblue" type="color">#00008b</item>
