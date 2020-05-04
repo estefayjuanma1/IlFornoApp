@@ -57,7 +57,9 @@
         android:textSize="15dp"
         android:text="@string/editar_correo_electr_nico" />
 
-    <TextView
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/et_nuevo_correo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -65,6 +67,16 @@
         android:layout_marginEnd="8dp"
         android:textSize="15dp"
         android:hint="@string/nuevo_correo_electr_nico" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/se_debe_actualizar_la_contrase_a_para_cambiar_su_email"
+        android:textSize="15dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,33 +84,31 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="8dp"
         android:textSize="15dp"
-        android:text="@string/editar_ciudad_de_residencia" />
+        android:text="@string/ingrese_contrase_a_nueva_o_mantenga_la_misma" />
 
-
-    <Spinner
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/et_pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="8dp"
         android:textSize="15dp"
-        android:id="@+id/sp_ciudad"
-        android:entries="@array/Ciudades" />
+        android:hint="@string/contrase_a" />
+
+
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/tv_cambiopass"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="8dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="@string/cambiar_contrase_a"
+        android:textColor="@android:color/holo_blue_dark"
         android:textSize="15dp"
-        android:text="@string/cambiar_foto_de_perfil" />
-
-    <ImageView
-        android:layout_marginTop="20dp"
-        android:layout_width="228dp"
-        android:layout_height="96dp"
-        android:layout_gravity="center"/>
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/bt_guardar_cambios"

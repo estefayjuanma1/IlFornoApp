@@ -44,6 +44,7 @@ class CuponesFragment : Fragment() {
         val myRef = database.getReference("Cupones")
 
 
+
         myRef.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(p0: DataSnapshot) {
                 if(p0.exists()){

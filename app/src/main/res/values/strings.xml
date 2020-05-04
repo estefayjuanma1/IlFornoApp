@@ -115,6 +115,18 @@
     <string name="postres">Postres</string>
     <string name="platos_fuertes">Platos fuertes</string>
     <string name="entradas">Entradas</string>
+    <string name="id_de_usuario">Id de usuario</string>
+    <string name="cambiar_contrase_a">Cambiar contraseña</string>
+    <string name="recuperar_contrase_a">Recuperar contraseña</string>
+    <string name="ingrese_correo_electr_nico_de_recuperaci_n">Ingrese correo electrónico de recuperación</string>
+    <string name="ingrese_contrase_a">Ingrese contraseña</string>
+    <string name="ingrese_contrase_a_nueva_o_mantenga_la_misma">ingrese contraseña nueva o mantenga la misma</string>
+    <string name="se_debe_actualizar_la_contrase_a_para_cambiar_su_email">Se debe actualizar la contraseña para cambiar su email</string>
+    <string name="nombre_registrado">Nombre registrado</string>
+    <string name="aplicar_cupon">Aplicar cupon</string>
+    <string name="aplicar">Aplicar</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="_1">1</string>
 
 
     <string-array name="Cantidad">

@@ -4,27 +4,43 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import com.estefayjuanma.ilfornoapp.R
+import com.estefayjuanma.ilfornoapp.ui.model.Recomendacion
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.fragment_ayudanos.*
+import kotlinx.android.synthetic.main.fragment_ayudanos.view.*
 
 class AyudanosFragment : Fragment() {
-
-    private lateinit var ayudaViewModel: AyudaViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        ayudaViewModel =
-            ViewModelProviders.of(this).get(AyudaViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_ayudanos, container, false)
-        val textView: TextView = root.findViewById(R.id.text_ayuda)
-        ayudaViewModel.text.observe(this, Observer { textView.text = it })
-
+            enviarReco(root)
         return root
+    }
+
+    private fun enviarReco(root: View) {
+       root.bt_enviar_reco.setOnClickListener {
+
+           if (root.et_ayuda.text.toString().isEmpty()) {
+             //  bt_enviar_reco.isEnabled = false
+               Toast.makeText(context,"Ingresa primero una recomendacion", Toast.LENGTH_SHORT).show()
+           } else {
+
+               var user = FirebaseAuth.getInstance().currentUser?.uid
+               val database = FirebaseDatabase.getInstance()
+               val myRef = database.getReference("Recomendaciones")
+               val idR = myRef.push().key
+               val recomendacion = Recomendacion(et_ayuda.text.toString())
+               myRef.child(user!!).child(idR!!).setValue(recomendacion)
+               Toast.makeText(context,"Su recomendacion a sido registrada", Toast.LENGTH_SHORT).show()
+           }
+       }
     }
 }

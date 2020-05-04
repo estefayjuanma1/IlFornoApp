@@ -27,27 +27,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_pedidos"
         android:layout_width="352dp"
         android:layout_height="387dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.217" />
-
+        app:layout_constraintVertical_bias="0.183" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="343dp"
-        android:layout_height="wrap_content"
+        android:layout_width="367dp"
+        android:layout_height="55dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
+        android:layout_marginTop="15dp"
         android:text="@string/total"
         android:textColor="@color/black"
         android:textSize="20dp"
+
         app:layout_constraintBottom_toTopOf="@+id/bt_domicilio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rv_pedidos"
@@ -55,11 +57,14 @@
 
     <TextView
         android:id="@+id/tv_total_pedido"
-        android:layout_width="278dp"
-        android:layout_height="27dp"
+        android:layout_width="242dp"
+        android:layout_height="47dp"
 
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="58dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.736"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rv_pedidos" />
 
@@ -93,19 +98,37 @@
         app:layout_constraintVertical_bias="0.801" />
 
     <EditText
-        android:id="@+id/textView4"
+        android:id="@+id/tv_cuponPedido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:hint="@string/ingresar_c_digo_de_descuento"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rv_pedidos"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        style="@style/margin"
+        android:id="@+id/tv_aplicardes"
+        android:layout_width="85dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginLeft="260dp"
+        android:background="@drawable/boton"
+        android:gravity="center"
+        android:text="@string/aplicar"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_total_pedido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pedidos"
+        app:layout_constraintVertical_bias="0.897" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

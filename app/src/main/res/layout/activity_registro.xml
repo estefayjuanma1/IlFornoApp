@@ -30,7 +30,7 @@
             android:background="@drawable/text"
             style="@style/margin"
             android:gravity="center"
-            android:id="@+id/nombre"/>
+            android:id="@+id/et_nombre"/>
 
         <EditText
             android:layout_width="match_parent"

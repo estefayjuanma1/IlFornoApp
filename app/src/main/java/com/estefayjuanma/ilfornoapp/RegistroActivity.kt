@@ -1,18 +1,13 @@
 package com.estefayjuanma.ilfornoapp
 
 import android.app.Activity
-import android.app.Application
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.room.Room
-import androidx.room.RoomDatabase
 import com.estefayjuanma.ilfornoapp.ui.Room.Ilforno
 import com.estefayjuanma.ilfornoapp.ui.Room.UsuarioDAO
-import com.estefayjuanma.ilfornoapp.ui.Room.UsuarioDB
-import com.estefayjuanma.ilfornoapp.ui.cupones.CuponesFragment
 import com.estefayjuanma.ilfornoapp.ui.model.Usuario
 import com.estefayjuanma.ilfornoapp.ui.model.Usuarioroom
 import com.google.firebase.auth.FirebaseAuth
@@ -33,7 +28,7 @@ class RegistroActivity : AppCompatActivity() {
 
         bt_registrar.setOnClickListener {
 
-            var nombre = nombre.text.toString()
+            var nombre = et_nombre.text.toString()
             var correo = et_correo.text.toString()
             var contra = et_contrasena.text.toString()
             var concontra = repcontrasena.text.toString()
@@ -49,7 +44,7 @@ class RegistroActivity : AppCompatActivity() {
                 }
                 else{
                     createUserInRoom()
-                    createUserInFirebaseAuth()
+                    createUserInFirebaseAuth(nombre)
                 }
             }
         }
@@ -67,7 +62,7 @@ class RegistroActivity : AppCompatActivity() {
 
 
 
-    private fun createUserInFirebaseAuth() {
+    private fun createUserInFirebaseAuth(nombre: String) {
         var malescrito = true
         val auth = FirebaseAuth.getInstance()  //var global para la autenticacion
 
@@ -81,7 +76,7 @@ class RegistroActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d("LoginActivity", "signInWithEmail:success")
                     val user = auth.currentUser
-                    createUserOnDataBase(user)
+                    createUserOnDataBase(user, nombre)
                     gotoLoginActivity()
                 } else {
                     Log.w("LoginActivity", "signInWithEmail:failure", task.exception)
@@ -106,14 +101,17 @@ class RegistroActivity : AppCompatActivity() {
         finish()
     }
 
-    private fun createUserOnDataBase(user: FirebaseUser?) {
-
+    private fun createUserOnDataBase(
+        user: FirebaseUser?,
+        nombre: String
+    ) {
         val database = FirebaseDatabase.getInstance()
         val myRef = database.getReference("usuarios")
 
         val usuario = Usuario(
             user!!.uid,
-            user!!.email.toString()
+            user!!.email.toString(),
+            nombre
         )
 
         myRef.child(user!!.uid).setValue(usuario)
@@ -132,6 +130,7 @@ class RegistroActivity : AppCompatActivity() {
         finish()
         super.onBackPressed()
     }
+
 
 
 }

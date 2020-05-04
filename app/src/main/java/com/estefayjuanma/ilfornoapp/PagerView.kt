@@ -7,13 +7,16 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import androidx.viewpager.widget.PagerAdapter
+import com.squareup.picasso.Picasso
 
 class PagerView : PagerAdapter{
     var con:Context
-    var path:IntArray //IntArray
+    var path= arrayOf<String>()
+   // var path:IntArray //IntArray
     lateinit var inflater: LayoutInflater
 
-    constructor(con: Context, path: IntArray): super(){//IntArray): super(){
+
+    constructor(con: Context, path: Array<String>): super(){//IntArray): super(){
         this.con = con
         this.path = path
     }
@@ -32,7 +35,8 @@ class PagerView : PagerAdapter{
         inflater = con.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         var rv: View = inflater.inflate(R.layout.swipe_fragment,container,false)
         img = rv.findViewById(R.id.img) as ImageView
-        img.setImageResource(path[position])
+        Picasso.get().load(path[position]).into(img) //
+        //img.setImageResource(path[position])
         container!!.addView(rv)
         return rv
     }
