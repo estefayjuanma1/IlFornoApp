@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
+import com.google.firebase.auth.FirebaseAuth
 import kotlin.concurrent.timerTask
 import java.util.*
 
@@ -23,11 +24,13 @@ class SplashActivity : AppCompatActivity() {
 
 
     private fun goToMainActivity() {
-        var intent = Intent(this, LoginActivity::class.java)
+        var intent = Intent()
+        if (FirebaseAuth.getInstance().currentUser != null){
+            intent = Intent(this, DrawerActivity::class.java)
+        }else{
+            intent = Intent(this,LoginActivity::class.java)
+        }
         startActivity(intent)
         finish()
     }
-
 }
-
-

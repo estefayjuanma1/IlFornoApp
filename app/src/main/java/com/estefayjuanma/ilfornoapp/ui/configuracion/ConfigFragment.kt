@@ -22,27 +22,27 @@ import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 class ConfigFragment : Fragment() {
-
+lateinit var rootView: View
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_config, container, false)
-        root.tv_cambiopass.setOnClickListener {
+        rootView = inflater.inflate(R.layout.fragment_config, container, false)
+        rootView.tv_cambiopass.setOnClickListener {
             val intent = Intent (activity!!.applicationContext, OlvidecontraActivity::class.java)
             startActivity(intent)
         }
-        updateuser(root)
-        return root
+        updateuser(rootView)
+        return rootView
     }
 
     private fun updateuser(root: View?) {
-        root?.bt_guardar_cambios?.setOnClickListener {
+        rootView.bt_guardar_cambios?.setOnClickListener {
             val database = FirebaseDatabase.getInstance()
             val myRef = database.getReference("usuarios")
-            val newname = et_nuevo_nombre.text.toString()
-            val newemail = et_nuevo_correo.text.toString()
+            val newname = rootView.et_nuevo_nombre.text.toString()
+            val newemail = rootView.et_nuevo_correo.text.toString()
             val currentuser = FirebaseAuth.getInstance().currentUser!!.uid
 
             myRef.addValueEventListener(object : ValueEventListener {
@@ -52,11 +52,11 @@ class ConfigFragment : Fragment() {
                         val usuario = snapshot.getValue(Usuario::class.java)
                         if (usuario!!.id == currentuser) {
                             if (newname != "")
-                                et_nuevo_nombre.setText(usuario.nombre)
+                                rootView.et_nuevo_nombre.setText(usuario.nombre)
                             else
                                 usuario.nombre = usuario.nombre
                             if (newemail != "")
-                                et_nuevo_correo.setText(usuario.correo)
+                                rootView.et_nuevo_correo.setText(usuario.correo)
                             else
                                 usuario.correo = usuario.correo
                         }
@@ -69,12 +69,12 @@ class ConfigFragment : Fragment() {
             })
             var bienescrito: Boolean = false
             val childUpdate = HashMap<String, Any> ()
-            childUpdate["nombre"] = et_nuevo_nombre.text.toString()
+            childUpdate["nombre"] = rootView.et_nuevo_nombre.text.toString()
             bienescrito=isEmailValid(newemail)
-            if(bienescrito == true && !et_pass.text.isEmpty()) {
+            if(bienescrito == true && !rootView.et_pass.text.isEmpty()) {
                 childUpdate["correo"] = newemail
                 myRef.child(currentuser).updateChildren(childUpdate)
-                crearuseryeliminaruser(newemail,et_pass.text.toString())
+                crearuseryeliminaruser(newemail,rootView.et_pass.text.toString())
 
             }else{
                 Toast.makeText(

@@ -32,8 +32,6 @@ class RegistroActivity : AppCompatActivity() {
             var correo = et_correo.text.toString()
             var contra = et_contrasena.text.toString()
             var concontra = repcontrasena.text.toString()
-            var intent = Intent()
-
             //if (isEmailValid(correo))
             if (contra != concontra) {
                 Toast.makeText(this, "Las contraseñas deben ser iguales", Toast.LENGTH_SHORT).show()

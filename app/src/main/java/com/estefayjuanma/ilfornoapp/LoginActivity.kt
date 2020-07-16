@@ -95,7 +95,6 @@ class LoginActivity : AppCompatActivity() {
                                         "Usuario no registrado",
                                         Toast.LENGTH_SHORT
                                     ).show()
-  //                                  gotoRegistroActivity()
                                 }
 
                             }
@@ -111,16 +110,6 @@ class LoginActivity : AppCompatActivity() {
                             Toast.LENGTH_SHORT
                         ).show()
 
-                    } else {
-                        if (usuarioroom.contraseña == contrasenalog.text.toString()) {
-                            gotoMainActivity()
-                        } else {
-                            Toast.makeText(
-                                this,
-                                "contraseña invalida",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        }
                     }
                 }
             }

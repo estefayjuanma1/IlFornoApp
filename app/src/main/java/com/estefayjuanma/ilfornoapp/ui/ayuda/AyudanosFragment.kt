@@ -37,7 +37,7 @@ class AyudanosFragment : Fragment() {
                val database = FirebaseDatabase.getInstance()
                val myRef = database.getReference("Recomendaciones")
                val idR = myRef.push().key
-               val recomendacion = Recomendacion(et_ayuda.text.toString())
+               val recomendacion = Recomendacion(root.et_ayuda.text.toString())
                myRef.child(user!!).child(idR!!).setValue(recomendacion)
                Toast.makeText(context,"Su recomendacion a sido registrada", Toast.LENGTH_SHORT).show()
            }

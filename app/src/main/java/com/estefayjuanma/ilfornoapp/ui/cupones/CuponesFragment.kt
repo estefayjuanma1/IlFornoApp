@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.fragment_cupones.*
 
 
 class CuponesFragment : Fragment() {
-
+    lateinit var rootView: View
     var cuponglotreinta: String = ""
     var cuponglocincuenta: String = ""
 
@@ -26,9 +26,9 @@ class CuponesFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_cupones, container, false)
+        rootView = inflater.inflate(R.layout.fragment_cupones, container, false)
 
-        return root
+        return rootView
     }
 
 

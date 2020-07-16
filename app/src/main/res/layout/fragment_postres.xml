@@ -20,17 +20,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_postres"
         android:layout_width="match_parent"
-        android:layout_height="545dp"
-        android:layout_marginTop="5dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_postres"
-            android:layout_width="385dp"
-            android:layout_height="643dp"
-            android:layout_marginTop="10dp" />
-
-    </ScrollView>
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
 
 </LinearLayout>

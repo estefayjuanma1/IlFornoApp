@@ -40,6 +40,7 @@ android:orientation="vertical">
     android:text="@string/seleccione_el_restaurante" />
 
 <Spinner
+    android:id="@+id/sp_restaurante"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:entries="@array/Restaurantes"
@@ -62,7 +63,7 @@ android:orientation="vertical">
     android:layout_marginEnd="8dp"
     android:textSize="15dp"
     android:hint="@string/nombre"
-    android:id="@+id/et_nombre_pedido"/>
+    android:id="@+id/et_nombre_pedido2"/>
 
 <TextView
     android:layout_width="match_parent"
@@ -71,37 +72,21 @@ android:orientation="vertical">
     android:layout_marginTop="15dp"
     android:layout_marginEnd="8dp"
     android:textSize="15dp"
-    android:text="@string/n_mero_de_documento_de_quien_realiza_el_pedido" />
+    android:text="@string/numero_de_telefono_de_quien_realiza_el_pedido" />
 
-<TextView
+<EditText
+    android:id="@+id/et_telefono2"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="8dp"
     android:layout_marginTop="5dp"
     android:layout_marginEnd="8dp"
     android:textSize="15dp"
-    android:hint="@string/documento_no" />
-
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="15dp"
-    android:layout_marginEnd="8dp"
-    android:textSize="15dp"
-    android:text="@string/hora_a_la_cual_desea_recoger_el_pedido_m_n_1_hora_de_espera" />
-
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="5dp"
-    android:layout_marginEnd="8dp"
-    android:textSize="15dp"
-    android:hint="HH:MM  (formato de 24 horas)" />
+    android:inputType="number"
+    android:hint="@string/telefono" />
 
 <Button
-    android:id="@+id/bt_enviar_pedido"
+    android:id="@+id/bt_enviar_pedido2"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center"

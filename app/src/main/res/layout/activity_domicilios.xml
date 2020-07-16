@@ -31,9 +31,10 @@
         android:text="@string/ingrese_la_direcci_n_de_env_o"/>
 
     <EditText
+        android:id="@+id/et_direccion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/dir"/>
+        android:hint="@string/dir" />
 
     <TextView
         android:layout_width="match_parent"
@@ -61,29 +62,33 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="8dp"
         android:textSize="15dp"
-        android:text="@string/n_mero_de_documento_de_quien_realiza_el_pedido" />
-
-    <TextView
+        android:inputType="number"
+        android:text="@string/numero_de_telefono_de_quien_realiza_el_pedido"/>
+    <EditText
+        android:id="@+id/et_documento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="8dp"
+        android:hint="@string/telefono"
         android:textSize="15dp"
-        android:hint="@string/documento_no" />
+        android:inputType="number"/>
 
 
     <CheckBox
+        android:id="@+id/ck_efectivo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/pago_en_efectivo"
         android:layout_marginTop="25dp"
-        android:checked="true"/>
+        android:checked="true"
+        android:text="@string/pago_en_efectivo" />
 
     <CheckBox
+        android:id="@+id/ck_tarjeta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/pago_con_tarjeta"/>
+        android:text="@string/pago_con_tarjeta" />
     <Button
         android:id="@+id/bt_enviar_pedido"
         android:layout_width="match_parent"

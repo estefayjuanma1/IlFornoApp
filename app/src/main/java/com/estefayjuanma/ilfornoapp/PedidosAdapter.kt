@@ -50,7 +50,7 @@ class PedidosAdapter(
             itemView.iv_delete.setImageResource(R.drawable.ic_delete_forever_black_24dp)
             Picasso.get().load(pedido.urlfoto).into(itemView.iv_imagenplato2)
             itemView.iv_delete.setOnClickListener(this)
-            itemView.tv_cantidad.text = pedido.cantidad.toString()
+            itemView.tv_cantidad2.text = pedido.cantidad.toString()
 
         }
         override fun onClick(v: View?) {

@@ -25,23 +25,23 @@ import kotlinx.android.synthetic.main.fragment_perfil.view.*
 
 class PerfilFragment : Fragment() {
 
-
+lateinit var rootView: View
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        val root = inflater.inflate(R.layout.fragment_perfil, container, false)
+        rootView = inflater.inflate(R.layout.fragment_perfil, container, false)
 
-        root.bt_cerrar_sesion.setOnClickListener {
+        rootView.bt_cerrar_sesion.setOnClickListener {
             val auth = FirebaseAuth.getInstance()  //var global para la autenticacion
             auth.signOut()
             gotoLoginActivity()
         }
 
 
-        return root
+        return rootView
     }
 
     override fun onResume() {
@@ -63,11 +63,11 @@ class PerfilFragment : Fragment() {
                 for (snapshot in dataSnapshot.children) {
                     val usuario = snapshot.getValue(Usuario::class.java)
                     if (usuario!!.id == user) {
-                        tv_mostrarnombre.text =
+                        rootView.tv_mostrarnombre.text =
                             dataSnapshot.child(user!!).child("nombre").getValue().toString()
-                        tv_mostrarcorreo.text =
+                        rootView.tv_mostrarcorreo.text =
                             dataSnapshot.child(user!!).child("correo").getValue().toString()
-                        tv_id.text = dataSnapshot.child(user!!).child("id").getValue().toString()
+                        rootView.tv_id.text = dataSnapshot.child(user!!).child("id").getValue().toString()
                     }
                 }
             }
